@@ -1,6 +1,6 @@
-<?php namespace pensoft\Accordions;
+<?php namespace Pensoft\Accordions;
 
-use pensoft\Accordions\Components\Accordion;
+use Pensoft\Accordions\Components\Accordion;
 use System\Classes\PluginBase;
 
 class Plugin extends PluginBase

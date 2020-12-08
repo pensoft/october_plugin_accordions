@@ -1,5 +1,5 @@
 list: $/pensoft/accordions/models/item/columns.yaml
-modelClass: pensoft\Accordions\Models\Item
+modelClass: Pensoft\Accordions\Models\Item
 title: AccordionItem
 noRecordsMessage: 'backend::lang.list.no_records'
 showSetup: true

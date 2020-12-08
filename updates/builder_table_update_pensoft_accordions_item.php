@@ -1,4 +1,4 @@
-<?php namespace pensoft\Accordions\Updates;
+<?php namespace Pensoft\Accordions\Updates;
 
 use Schema;
 use October\Rain\Database\Updates\Migration;

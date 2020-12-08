@@ -1,4 +1,4 @@
-<?php namespace pensoft\Accordions\Models;
+<?php namespace Pensoft\Accordions\Models;
 
 use Model;
 

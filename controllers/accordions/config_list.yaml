@@ -1,5 +1,5 @@
 title: Accordions
-modelClass: pensoft\Accordions\Models\Category
+modelClass: Pensoft\Accordions\Models\Category
 list: $/pensoft/accordions/models/category/columns.yaml
 recordUrl: 'pensoft/accordions/accordions/update/:id'
 noRecordsMessage: 'backend::lang.list.no_records'

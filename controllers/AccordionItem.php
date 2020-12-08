@@ -1,4 +1,4 @@
-<?php namespace pensoft\Accordions\Controllers;
+<?php namespace Pensoft\Accordions\Controllers;
 
 use Backend\Classes\Controller;
 use BackendMenu;
@@ -16,6 +16,6 @@ class AccordionItem extends Controller
     public function __construct()
     {
         parent::__construct();
-        BackendMenu::setContext('pensoft.Accordions', 'main-menu-item', 'side-menu-item');
+        BackendMenu::setContext('Pensoft.Accordions', 'main-menu-item', 'side-menu-item');
     }
 }

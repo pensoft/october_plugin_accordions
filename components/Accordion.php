@@ -1,8 +1,8 @@
 <?php
 
-namespace pensoft\Accordions\Components;
+namespace Pensoft\Accordions\Components;
 
-use pensoft\Accordions\Models\Category;
+use Pensoft\Accordions\Models\Category;
 
 class Accordion extends \Cms\Classes\ComponentBase {
 
