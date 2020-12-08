@@ -1,7 +1,7 @@
 plugin:
     name: 'pensoft.accordions::lang.plugin.name'
     description: 'pensoft.accordions::lang.plugin.description'
-    author: pensoft
+    author: Pensoft
     icon: oc-icon-navicon
     homepage: ''
 navigation:
