@@ -5,4 +5,5 @@ columns:
         searchable: true
     body:
         label: body
-        type: text
+        type: partial
+        path: $/pensoft/accordions/partials/_body_column.htm
