@@ -71,9 +71,22 @@ class Accordion extends \Cms\Classes\ComponentBase {
                 'description' => '',
                 'default' => 'ui-icon-triangle-1-s',
                 'type' => 'dropdown',
-            ]
+            ],
+			'templates' => [
+				'title' => 'Select templates',
+				'type' => 'dropdown',
+				'default' => 'template1'
+			],
         ];
     }
+
+	public function getTemplatesOptions()
+	{
+		return [
+			'template1' => 'Template 1',
+			'template2' => 'Template 2',
+		];
+	}
 
     public function getIconsHeaderOptions()
     {

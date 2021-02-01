@@ -1,0 +1,7 @@
+<h3 class="accordion-toggle">
+	{% if prefix %}
+	<span class="accordion-title-predix hide relative">{{prefix}}</span>
+	{% endif %}
+	<div class="accordion-title">{{title}}</div>
+</h3>
+<div class="accordion-content">{{content|raw}}</div>

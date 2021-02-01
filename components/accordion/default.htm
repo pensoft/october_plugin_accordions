@@ -1,7 +1,7 @@
 <h2 class="underline">{{accordion.getAccordion().name}}</h2>
-<div id="{{__SELF__.property('elementId')}}" class="text-left relative">
-    {% for item in accordion.getAccordion().items.take(__SELF__.property('maxItems')) %}
-        {% partial "@accordion-item" title=item.title content=item.body prefix=item.prefix %}
+<div id="{{__SELF__.property('elementId')}}" class="row projects_services text-left relative top-xs">
+    {% for key, item in accordion.getAccordion().items.take(__SELF__.property('maxItems')) %}
+        {% partial __SELF__ ~ "::templates/" ~ __SELF__.property('templates') title=item.title content=item.body prefix=item.prefix key=key  %}
     {% endfor %}
 </div>
 
@@ -27,4 +27,6 @@
             $(".accordion-title-predix").removeClass('hide').removeClass('relative').addClass('absolute');
         });
     })
+	$('.key_1, .key_3, .key_5, .key_7, .key_9').wrapAll('<div class="col-md-6 col-xs-12" />');
+	$('.key_0, .key_2, .key_4, .key_6, .key_8').wrapAll('<div class="col-md-6 col-xs-12" />');
 </script>
