@@ -27,6 +27,11 @@
             $(".accordion-title-predix").removeClass('hide').removeClass('relative').addClass('absolute');
         });
     })
-	$('.key_1, .key_3, .key_5, .key_7, .key_9').wrapAll('<div class="col-md-6 col-xs-12" />');
-	$('.key_0, .key_2, .key_4, .key_6, .key_8').wrapAll('<div class="col-md-6 col-xs-12" />');
+	var width = $(window).width();
+
+	if (width >= 1024) {
+		$('.key_1, .key_3, .key_5, .key_7, .key_9').wrapAll('<div class="col-md-6 col-xs-12" />');
+		$('.key_0, .key_2, .key_4, .key_6, .key_8').wrapAll('<div class="col-md-6 col-xs-12" />');
+	}
+
 </script>

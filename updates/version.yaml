@@ -16,3 +16,5 @@
     - 'Update partial elements'
 1.0.7:
     - 'Added new template'
+1.0.8:
+    - 'Fix items order for template 2 in mobile'
