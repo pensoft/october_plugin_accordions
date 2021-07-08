@@ -85,6 +85,7 @@ class Accordion extends \Cms\Classes\ComponentBase {
 		return [
 			'template1' => 'Template 1',
 			'template2' => 'Template 2',
+			'template3' => 'Template 3',
 		];
 	}
 
