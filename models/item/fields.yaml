@@ -8,9 +8,9 @@ fields:
         span: auto
         type: text
     body:
-        label: Body
-        size: ''
-        span: auto
+        label: 'pensoft.accordions::lang.plugin.description'
+        size: large
+        span: left
         type: richeditor
     accordion:
         label: Relation

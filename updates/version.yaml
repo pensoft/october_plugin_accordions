@@ -14,3 +14,11 @@
     - builder_table_update_pensoft_accordions_item_2.php
 1.0.6:
     - 'Update partial elements'
+1.0.7:
+    - 'Added new template'
+1.0.8:
+    - 'Fix items order for template 2 in mobile'
+1.0.9:
+    - 'Added new template'
+1.0.10:
+    - 'Added a new template'
