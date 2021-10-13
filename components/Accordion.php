@@ -2,11 +2,14 @@
 
 namespace Pensoft\Accordions\Components;
 
+use Backend\Facades\BackendAuth;
 use Pensoft\Accordions\Models\Category;
 
 class Accordion extends \Cms\Classes\ComponentBase {
 
     // $this->property();
+
+	public $loggedIn;
 
     public function componentDetails(){
         return [
@@ -23,6 +26,13 @@ class Accordion extends \Cms\Classes\ComponentBase {
         // $this->page['vvv'] = 'value'; // Inject some variable to the page
         $this->addJs('assets/js/jquery-ui.min.js');
         $this->addCss('assets/css/jquery-ui.css');
+
+		// by default users are not logged in
+		$this->loggedIn = false;
+		// end then if getUser returns other value than NULL then our user is logged in
+		if (!empty(BackendAuth::getUser())) {
+			$this->loggedIn = true;
+		}
     }
 
     public function defineProperties(){

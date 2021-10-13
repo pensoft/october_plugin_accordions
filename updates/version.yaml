@@ -8,10 +8,8 @@
     - builder_table_create_pensoft_accordions_item.php
 1.0.4:
     - 'Updated table pensoft_accordions_item'
-    - builder_table_update_pensoft_accordions_item.php
 1.0.5:
     - 'Updated table pensoft_accordions_item'
-    - builder_table_update_pensoft_accordions_item_2.php
 1.0.6:
     - 'Update partial elements'
 1.0.7:
@@ -22,3 +20,5 @@
     - 'Added new template'
 1.0.10:
     - 'Added a new template'
+1.0.11:
+    - 'Edit link'

@@ -3,6 +3,9 @@
     {% for key, item in __SELF__.getAccordion().items.take(__SELF__.property('maxItems')) %}
         {% partial __SELF__ ~ "::templates/" ~ __SELF__.property('templates') title=item.title content=item.body prefix=item.prefix key=key  %}
     {% endfor %}
+	{% if __SELF__.loggedIn %}
+	<p><a class="edit-link" href="/admin/pensoft/accordions/accordionitem" target="_blank">Edit</a></p>
+	{% endif %}
 </div>
 
 <script>
