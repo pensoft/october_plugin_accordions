@@ -85,7 +85,7 @@ class Accordion extends \Cms\Classes\ComponentBase {
 			'templates' => [
 				'title' => 'Select templates',
 				'type' => 'dropdown',
-				'default' => 'template1'
+				'default' => 'template5'
 			],
         ];
     }
@@ -97,6 +97,7 @@ class Accordion extends \Cms\Classes\ComponentBase {
 			'template2' => 'Template 2',
 			'template3' => 'Template 3',
 			'template4' => 'Template 4',
+			'template5' => 'Template 5',
 		];
 	}
 
