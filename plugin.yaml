@@ -14,3 +14,7 @@ navigation:
                 label: Items
                 url: pensoft/accordions/accordionitem
                 icon: icon-th-list
+            side-menu-item2:
+                label: Categories
+                url: pensoft/accordions/accordions
+                icon: icon-sitemap
