@@ -3,7 +3,6 @@
 use Model;
 use BackendAuth;
 use Validator;
-
 /**
  * Model
  */
@@ -19,6 +18,7 @@ class Item extends Model
 
     // Add  for revisions limit
     public $revisionableLimit = 200;
+
 
     // Add for revisions on particular field
     protected $revisionable = ["id","title","content"];
@@ -44,6 +44,7 @@ class Item extends Model
 
 
     // Add  below relationship with Revision model
+
     public $morphMany = [
     'revision_history' => ['System\Models\Revision', 'name' => 'revisionable']
         ];
@@ -56,6 +57,7 @@ class Item extends Model
     {
         return BackendAuth::getUser()->id;
     }
+
 
     /**
      * Add translation support to this model, if available.

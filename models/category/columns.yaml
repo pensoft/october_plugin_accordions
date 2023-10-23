@@ -7,3 +7,9 @@ columns:
         label: body
         type: partial
         path: $/pensoft/accordions/partials/_body_column.htm
+    revisions:
+        type: partial
+        path: ~/plugins/pensoft/media/partials/_revision.htm
+        searchable: false
+        sortable: false
+        valueFrom: id

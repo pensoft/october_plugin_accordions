@@ -12,10 +12,23 @@ class Category extends Model
     use \October\Rain\Database\Traits\Validation;
 
 
+
     /**
      * @var array Translatable fields
      */
     public $translatable = ['name', 'body'];
+
+    // For Revisionable namespace
+    use \October\Rain\Database\Traits\Revisionable;
+
+    public $timestamps = false;
+
+    // Add  for revisions limit
+    public $revisionableLimit = 200;
+
+    // Add for revisions on particular field
+    protected $revisionable = ["id","title","content"];
+
 
     /**
      * @var string The database table used by the model.
@@ -45,6 +58,7 @@ class Category extends Model
     {
         return BackendAuth::getUser()->id;
     }
+
 
     /**
      * Add translation support to this model, if available.
