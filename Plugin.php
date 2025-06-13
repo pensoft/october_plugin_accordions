@@ -26,7 +26,41 @@ class Plugin extends PluginBase
         ];
     }
 
-    public function registerSettings()
+    public function registerPermissions()
     {
+        return [
+            'pensoft.accordions.access' => [
+                'tab' => 'Accordions',
+                'label' => 'Manage accordions'
+            ],
+        ];
     }
+
+    public function registerNavigation()
+    {
+        return [
+            'accordions' => [
+                'label'       => 'Accordions',
+                'url'         => \Backend::url('pensoft/accordions/accordions'),
+                'icon'        => 'icon-th-list',
+                'permissions' => ['pensoft.accordions.*'],
+                'sideMenu' => [
+                    'side-menu-item' => [
+                        'label'       => 'Items',
+                        'url'         => \Backend::url('pensoft/accordions/accordionitem'),
+                        'icon'        => 'icon-th-list',
+                        'permissions' => ['pensoft.accordions.*'],
+                    ],
+                    'side-menu-item2' => [
+                        'label'       => 'Categories',
+                        'url'         => \Backend::url('pensoft/accordions/accordions'),
+                        'icon'        => 'icon-sitemap',
+                        'permissions' => ['pensoft.accordions.*'],
+                    ],
+
+                ]
+            ],
+        ];
+    }
+
 }
