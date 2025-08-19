@@ -34,3 +34,6 @@
     - 'revision partial'
 1.0.17:
     - 'Permissions'
+1.0.18:
+    - 'Changed title field from VARCHAR(255) to TEXT for larger titles'
+    - update_table_pensoft_accordions_item.php
